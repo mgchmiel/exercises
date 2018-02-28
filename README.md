@@ -1,8 +1,8 @@
-Credit Card Validation
+#Credit Card Validation
 You're starting your own credit card business. You've come up with a new way to validate credit cards with a simple function called validateCreditCard that returns true or false.
 
 Here are the rules for a valid number:
-
+```
 Number must be 16 digits, all of them must be numbers
 You must have at least two different digits represented (all of the digits cannot be the same)
 The final digit must be even
@@ -18,18 +18,18 @@ a923-3211-9c01-1112 invalid characters
 1111-1111-1111-1110 sum less than 16
 6666-6666-6666-6661 odd final number
 In order to run the function, you'll need to load javascript on an HTML page. Click here for instructions on how to do that. From there, you will open your developer console to call the function.
+```
+
+`Hint: Remove the dashed from the input string before checking if the input credit card number is valid.`
 
 
-Hint: Remove the dashed from the input string before checking if the input credit card number is valid.
-
-
-
+```
 Bonus: Return an object indicating whether the credit card is valid, and if not, what the error is 
 { valid: true, number: 'a923-3211-9c01-1112' } 
 { valid: false, number: 'a923-3211-9c01-1112', error: ‘wrong_length’ }
 
 Double Bonus: Make your credit card scheme even more advanced! What are the rules, and what are some numbers that pass or fail? Ideas: check expiration date! Check out the Luhn Algorithm for inspiration.
-
+```
 
 ----------------------------
 
@@ -38,6 +38,7 @@ The Cash Register
 
 Write a function called cashRegister that takes a shopping cart object. The object contains item names and prices (itemName: itemPrice). The function should return the total price of the shopping cart.
 Example
+```
 // Input
 var cartForParty = {  
   banana: "1.25",
@@ -51,3 +52,4 @@ var cartForParty = {
 // Output
 cashRegister(cartForParty)); // 60.55
 
+```
